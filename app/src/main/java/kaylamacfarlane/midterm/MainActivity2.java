@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -20,17 +19,10 @@ public class MainActivity2 extends ActionBarActivity {
         String message = intent.getStringExtra("myMessage");
 
         TextView textView = new TextView(this);
-        //TextView textView = (TextView)findViewbyId(R.id.editText);
         textView.setTextSize(24);
         textView.setText(message);
         setContentView(textView);
 
-        final Button button1 = (Button) findViewById(R.id.backbutton);
-        button1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                finish();
-            }
-        });
     }
 
 
